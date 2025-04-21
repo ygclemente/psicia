@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PsicIA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background: #fff;
+            padding: 0 5px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            background: #2980b9;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-box button:hover {
+            background: #2471a3;
+        }
+
+        .login-box .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="login-box" action="cadastro.php" method="POST">
+        <h2>Faça seu Cadastro!</h2>
+
+        <div class="input-box">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="input-box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="input-box">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+
+        <div class="footer">
+            Já tem uma conta no PsicIA? <a href="login.html">Faça seu Login</a>
+        </div>
+    </form>
+
+</body>
+</html>
